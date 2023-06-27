@@ -5,6 +5,28 @@
 
 A tool to convert config file attributes to binaries.
 
+Have you ever had the need to read values from a config file during shell scripting?
+
+Now you can:
+
+_config.json_
+```json
+{
+  "some": {
+    "value": "read me!"
+  }
+}
+```
+
+_yourscript.sh_
+```
+binify config.json
+echo $(some.value)
+```
+
+Output:
+`read me!`
+
 ## Installation
 
 #### From [crates.io](https://crates.io/crates/binify)
