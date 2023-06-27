@@ -75,13 +75,16 @@ fn dfs_json(data: &Value, pairs: &mut Vec<(String, Value)>, parent: &str) {
                     if value.is_object() || value.is_array() {
                         dfs_json(value, pairs, key.as_str());
                     } else {
+                        if parent.is_empty() {
+                            pairs.push((key.to_owned(), value.clone()));
+                            continue;
+                        }
                         pairs.push((format!("{}.{}", parent, key.as_str()), value.clone()));
                     }
                 }
             }
         }
         _array if data.is_array() => {
-            println!("{:?}", _array);
             if let Some(array) = data.as_array() {
                 for (idx, value) in array.iter().enumerate() {
                     dfs_json(value, pairs, format!("{}.{}", parent, idx).as_str());
