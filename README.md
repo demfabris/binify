@@ -1,10 +1,13 @@
+[<img alt="github" src="https://img.shields.io/badge/github-demfabris/binify-8da0cb?style=for-the-badge&labelColor=555555&logo=github">](https://github.com/demfabris/binify)
+![Crates.io](https://img.shields.io/crates/v/binify?style=for-the-badge)
+
 # binify
 
 A tool to convert config file attributes to binaries.
 
 ## Installation
 
-### from crates.io
+#### From [crates.io](https://crates.io/crates/binify)
 `cargo install binify`
 
 ## Example
