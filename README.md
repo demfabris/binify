@@ -81,3 +81,7 @@ BAR
 $ ./BAZ
 BORG
 ```
+
+## Disclaimer
+
+Do not generate binaries from unknown files
