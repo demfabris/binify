@@ -1,0 +1,13 @@
+[package]
+name = "binify"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+categories = ["command-line-utilities, filesystem"]
+keywords = ["bin", "cli", "json", "env"]
+authors = ["Fabricio <demfabris@gmail.com>"]
+description = "A tool to convert config file attributes to binaries"
+
+[dependencies]
+serde_json = "1"
+clap = { version = "4", features = ["derive"] }
